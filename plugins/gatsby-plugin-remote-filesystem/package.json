@@ -1,0 +1,32 @@
+{
+  "name": "gatsby-plugin-remote-filesystem",
+  "description": "Adds a localURL field to any File node created with gatsby-source-filesystem's createRemoteFileNode",
+  "version": "1.0.0",
+  "author": "Michael Maurer <mjmaurer777@gmail.com>",
+  "dependencies": {
+    "@babel/runtime": "^7.16.3",
+    "fs-extra": "^10.0.0",
+    "gatsby-core-utils": "^3.1.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "babel-preset-gatsby-package": "^2.1.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3"
+  },
+  "homepage": "https://github.com/mjmaurer/gatsby-transformer-remote-filesystem",
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": "^4.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjmaurer/gatsby-transformer-remote-filesystem"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

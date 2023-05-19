@@ -1,0 +1,24 @@
+@keyframes twitch {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  20% {
+    transform: rotate(14deg) scale(1.1);
+  }
+  40% {
+    transform: rotate(-14deg) scale(1.2);
+  }
+  60% {
+    transform: rotate(14deg) scale(1.2);
+  }
+  80% {
+    transform: rotate(-14deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.group:hover .twitch {
+  animation: twitch 400ms;
+}

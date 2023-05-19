@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'whiskey-font-one';
+    src: url('../assets/fonts/whiskey-font-one.woff2') format('woff2'),
+         url('../assets/fonts/whiskey-font-one.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'iowan-old-style';
+    src: url('../assets/fonts/bitstream-iowan-old-style-roman.woff2') format('woff2'),
+         url('../assets/fonts/bitstream-iowan-old-style-roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'iowan-old-style';
+    src: url('../assets/fonts/bitstream-iowan-old-style-bold.woff2') format('woff2'),
+         url('../assets/fonts/bitstream-iowan-old-style-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'iowan-old-style';
+    src: url('../assets/fonts/bitstream-iowan-old-style-italic.woff2') format('woff2'),
+         url('../assets/fonts/bitstream-iowan-old-style-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+.h1 {
+  @apply text-4xl sm:text-6xl 2xl:text-7xl 4k:text-8xl font-header;
+}
+
+.h2 {
+  @apply text-3xl sm:text-5xl 2xl:text-6xl 4k:text-7xl font-header;
+}
+
+body {
+  @apply font-body text-gray-600;
+}
+
+.text-glow {
+  animation: glow 1s linear infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px currentColor;
+  }
+  to {
+    text-shadow: 0 0 20px currentColor;
+  }
+}

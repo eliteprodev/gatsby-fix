@@ -1,0 +1,13 @@
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8;
+  @apply max-w-[1612px] 4k:max-w-[calc(100vw-308px)];
+}
+
+.container-sm {
+  @apply mx-auto px-4 sm:px-6 lg:px-8;
+  @apply max-w-[1098px] 2xl:max-w-[1332px] 4k:max-w-[calc(100vw-588px)];
+}
+
+.container-w-full {
+  @apply max-w-screen-2xl mx-auto;
+}

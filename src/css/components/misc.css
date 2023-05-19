@@ -1,0 +1,82 @@
+.grecaptcha-badge {
+  display: none !important;
+}
+
+svg {
+  @apply w-full h-full;
+}
+
+.iframe-container {
+  iframe {
+    @apply absolute top-0 left-0 w-full h-full;
+  }
+}
+
+.svg-auto {
+  svg {
+    width: auto;
+    height: auto;
+  }
+}
+
+.focus-white,
+.focus-dark {
+  @apply outline-none focus:outline-none focus:ring-inset focus-visible:ring-2;
+}
+
+.focus-white {
+  @apply focus-visible:ring-white;
+}
+
+.focus-dark {
+  @apply focus-visible:ring-black;
+}
+
+.li {
+  @apply pl-7 relative before:content-[''] before:absolute before:bg-current before:w-1.5 before:h-1.5 before:rounded-[50%] before:top-2.5 before:left-1;
+}
+
+.prose {
+  .wp-caption-text {
+    @apply mt-1 text-sm text-gray-500;
+  }
+  .iframe-container {
+    @apply aspect-w-16 aspect-h-9;
+  }
+  img.aligncenter {
+    @apply mx-auto;
+  }
+}
+
+.center {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
+.tileable {
+  background-image: url('../assets/images/tileable.jpg')
+}
+
+.new-mint-bg {
+  background-image: url('../assets/images/bg-mint.png')
+}
+
+.loading:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  animation: ellipsis steps(4,end) 1s infinite;      
+  content: "\2026"; /* ascii code for the ellipsis character */
+  width: 0px;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 1.25em;    
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 1.25em;    
+  }
+}

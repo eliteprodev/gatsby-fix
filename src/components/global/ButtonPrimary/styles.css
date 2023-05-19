@@ -1,0 +1,4 @@
+.button-clip {
+  --corner-width: 8px;
+  clip-path: polygon(var(--corner-width) 0, calc(100% - var(--corner-width)) 0, 100% var(--corner-width), 100% calc(100% - var(--corner-width)), calc(100% - var(--corner-width)) 100%, var(--corner-width) 100%, 0 calc(100% - var(--corner-width)), 0 var(--corner-width));
+}
