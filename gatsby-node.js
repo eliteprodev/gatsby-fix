@@ -7,6 +7,7 @@
 
 const { createPages } = require('./create/createPages')
 const { createProjects } = require('./create/createProjects')
+const nodeExternals = require('webpack-node-externals');
 
 module.exports.createPages = async gatsbyUtilities => {
   await createPages(gatsbyUtilities)
@@ -40,9 +41,16 @@ module.exports.onCreateWebpackConfig = ({
         path: require.resolve('path-browserify'),
         buffer: require.resolve('buffer'),
         process: require.resolve('process'),
-        zlib: require.resolve("browserify-zlib")
+        zlib: require.resolve("browserify-zlib"),
+        http: require.resolve('stream-http'),
+        https: require.resolve('https-browserify')
       },
     },
+    externals: [
+      nodeExternals({
+        allowlist: ['node:crypto']
+      })
+    ],
     plugins: [
       new webpack.ProvidePlugin({
         Buffer: ['buffer', 'Buffer'],
