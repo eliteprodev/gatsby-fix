@@ -23,6 +23,7 @@ import MintButton from '../MintButton'
 // @ts-ignore
 import * as styles from './styles.module.css'
 import { CandyMachine, DefaultCandyGuardSettings, Metaplex, SolAmount,walletAdapterIdentity } from '@metaplex-foundation/js'
+import 'swiper/css'
 // const txTimeout = 120 * 1000 // milliseconds (confirm this works for your project)
 
 interface MintContainerProps {

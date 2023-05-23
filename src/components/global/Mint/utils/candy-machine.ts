@@ -17,6 +17,7 @@ import {
   SPL_ASSOCIATED_TOKEN_ACCOUNT_PROGRAM_ID,
 } from './misc'
 import { Metaplex, bundlrStorage, toMetaplexFile, toBigNumber, CreateCandyMachineInput, DefaultCandyGuardSettings, CandyMachineItem, toDateTime, sol, TransactionBuilder, CreateCandyMachineBuilderContext, walletAdapterIdentity } from "@metaplex-foundation/js";
+import 'swiper/css'
 
 export const CANDY_MACHINE_PROGRAM = new anchor.web3.PublicKey(
   'cndy3Z4yapfJBmL3ShUp5exZKqR3z33thTzeNMm2gRZ'
