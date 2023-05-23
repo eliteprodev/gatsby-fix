@@ -1,5 +1,6 @@
 import React from 'react'
 import Showcase from '../../global/Showcase'
+import 'swiper/css'
 
 const ProjectShowcase = props => {
   return (
