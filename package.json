@@ -60,7 +60,7 @@
     "react-use": "^17.3.2",
     "stream-browserify": "^3.0.0",
     "stream-http": "^3.2.0",
-    "swiper": "^7.4.1",
+    "swiper": "^6.8.4",
     "tailwindcss": "^3.0.10",
     "util": "^0.12.4"
   },
